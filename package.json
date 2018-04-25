@@ -1,0 +1,28 @@
+{
+  "name": "cryptopals",
+  "version": "1.0.0",
+  "description": "Contains the code and unit tests for the cryptopals challenges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobheater/cryptopals.git"
+  },
+  "keywords": [
+    "cryptopals",
+    "cryptography",
+    "challenges",
+    "javascript"
+  ],
+  "author": "Jacob Heater",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobheater/cryptopals/issues"
+  },
+  "homepage": "https://github.com/jacobheater/cryptopals#readme",
+  "dependencies": {
+    "jasmine": "^3.1.0"
+  }
+}
