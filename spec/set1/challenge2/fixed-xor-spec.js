@@ -1,5 +1,7 @@
 const fixedXOR = require('../../../set1/challenge2/fixed-xor');
 
+// Source: https://cryptopals.com/sets/1/challenges/2
+
 describe('Creates the XOR difference between two buffers', () => {
 
   it('Creates the desired XOR output between the two buffers', () => {
