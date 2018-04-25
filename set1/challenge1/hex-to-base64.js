@@ -1,4 +1,7 @@
-module.exports = hexToBase64;
+module.exports = {
+  hexToBase64: hexToBase64,
+  hexToAscii: hexToAscii
+};
 
 /**
  * Converts a hexadecimal encoded string to base64 encoding.
@@ -7,6 +10,20 @@ module.exports = hexToBase64;
  * @returns {String}
  */
 function hexToBase64(hex) {
+  let asciiString = hexToAscii(hex);
+
+  // Convert ASCII to base64.
+
+  return Buffer.from(asciiString).toString('base64');
+}
+
+/**
+ * Converts a base16 string to ASCII encoding.
+ * 
+ * @param {String} hex The base16 string to convert to ASCII.
+ * @returns {String}
+ */
+function hexToAscii(hex) {
   // Break up the hex into its chars.
   // Then convert hexadecimal to ASCII.
   let base16Chars = breakUpHexadecimal(hex);
@@ -14,9 +31,7 @@ function hexToBase64(hex) {
   let asciiChars = asciiCodes.map(c => String.fromCharCode(c));
   let asciiString = asciiChars.reduce((c, n) => c + n);
 
-  // Convert ASCII to base64.
-
-  return Buffer.from(asciiString).toString('base64');
+  return asciiString;
 }
 
 /**

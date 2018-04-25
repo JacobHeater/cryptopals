@@ -1,4 +1,4 @@
-const hexToBase64 = require('../../../set1/challenge1/hex-to-base64');
+const { hexToBase64 } = require('../../../set1/challenge1/hex-to-base64');
 
 describe('Hexadecimal string is successfully converted to expected base64 output', () => {
 
