@@ -4,7 +4,7 @@
   "description": "Contains the code and unit tests for the cryptopals challenges.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
     "url": "https://github.com/jacobheater/cryptopals/issues"
   },
   "homepage": "https://github.com/jacobheater/cryptopals#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jasmine": "^3.1.0"
   }
 }
