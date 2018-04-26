@@ -1,4 +1,4 @@
-const { hexToBase64 } = require('../../../set1/challenge1/hex-to-base64');
+const hexToBase64 = require('../../../set1/challenge1/hex-to-base64');
 
 // Source: https://cryptopals.com/sets/1/challenges/1
 
