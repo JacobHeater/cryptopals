@@ -1,4 +1,4 @@
-const { hexToAscii } = require('../challenge1/hex-to-base64');
+const { hexToAscii } = require('../helpers');
 
 module.exports = fixedXOR;
 
