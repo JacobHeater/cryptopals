@@ -30,7 +30,7 @@ function findAndDecryptStringInLines(lines) {
     }
 
   }
-
+  
   return decryptSingleByteXORCipher(cipher);
 
 }

@@ -15,8 +15,8 @@ function decryptSingleByteXORCipher(hex) {
     let buff = hexToBuffer(hex);
     let byteArr = Array.from(buff);
     let scored = scoreKeys(hex);
-    
-    let key = scored[0];
+
+    let key = scored[0].key;
     let charCode = hexKeyToAsciiCharCode(key);
 
     let plainText = byteArr.map(b => b ^ charCode)
