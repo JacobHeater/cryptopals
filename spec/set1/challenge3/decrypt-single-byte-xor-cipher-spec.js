@@ -1,5 +1,7 @@
 const decryptSingleByteXORCipher = require('../../../set1/challenge3/decrypt-single-byte-xor-cipher');
 
+// Source: https://cryptopals.com/sets/1/challenges/3
+
 describe('Test single byte XOR cipher decryption', () => {
 
   it('Should be able to decrypt the single byte XOR hex string.', () => {
