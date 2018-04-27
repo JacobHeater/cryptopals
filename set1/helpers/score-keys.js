@@ -24,8 +24,7 @@ function scoreKeys(hex) {
 
     return Object.keys(map)
         .map(k => map[k])
-        .sort((a, b) => b.count - a.count)
-        .map(k => k.key);
+        .sort((a, b) => b.count - a.count);
 }
 
 module.exports = scoreKeys;
